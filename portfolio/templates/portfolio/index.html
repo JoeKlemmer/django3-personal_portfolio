@@ -1,5 +1,9 @@
 <h2>Portfolio Page</h2>
 
+{% load static %}
+
+<img src="{% static 'portfolio/Thoughtful-Joe-s.jpg' %}">
+
 {% for project in projects %}
 
 <h2>{{ project.title }}</h2>
@@ -9,6 +13,7 @@
 <br />
 {% if project.url %}
   <a href="{{ project.url }}">Link</a>
+<br />
 <br />
 <hr>
 <br />
