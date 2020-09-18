@@ -1,2 +1,7 @@
 
-This is: {{ blog.title }}
+<h2>{{ blog.title }}</h2>
+
+<i>--{{ blog.date|date:'F jS Y' }}--</i>
+<br />
+<br />
+{{ blog.description|safe }}
