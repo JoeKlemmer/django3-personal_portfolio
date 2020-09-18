@@ -1,3 +1,7 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block content %}
+
 [<a href="/">home</a>]
 <h2>My Blog</h2>
 <h5>There
@@ -15,3 +19,5 @@
 <p>{{ blog.description|striptags|truncatechars:50 }}</p>
 
 {% endfor %}
+
+{% endblock %}
